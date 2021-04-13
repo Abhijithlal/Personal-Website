@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+body{
+    margin: 0%;
+    background: #F2F2F2;
+}
+.main{
+    width: 1400px;
+    height: 700px;
+    background: #151D1D;
+    margin-left: 60px;
+    margin-top: 20px;
+    border-radius: 50px;
+    padding-top: 1px;
+    box-shadow: grey 2px 2px 20px;
+}
+.heading{
+    color: #05E7B6;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 340px;
+    margin-bottom: -20px;
+}
+.optionButtons{
+padding-left: 570px;
+
+}
+.restartButton{
+    background: #05E7B6;
+    color: white;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    border-color: none;
+    border-style: none;
+    cursor: pointer;
+}
+.exitButton{
+    background: #FC7330;
+    color: white;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    width: 100px;
+    height: 40px;
+    margin-left: 60px;
+    border-radius: 50px;
+    border-color: none;
+    border-style: none;
+    cursor: pointer;
+}
+.compScore{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    margin-left: -1000px;
+    padding-top: 20px;
+}
+.compScoreValue{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+.compResponse{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    background: #05E7B6;
+    width: 350px;
+    height: 160px;
+    border-radius: 50px;
+    padding-top: 0.1px;
+    text-align: center;
+    margin-left: 250px;
+    float: left;
+}
+.line{
+    margin-left: 100px;
+    margin-top: -100px;
+    float: left;
+    
+}
+.userScore{
+    float: left;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    margin-top: -135px;
+    margin-left: 500px;
+}
+.userScoreValue{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+.gameValue{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    background: #05E7B6;
+    width: 350px;
+    height: 110px;
+    margin-top: -1px;
+    border-radius: 50px;
+    margin-left: 800px;
+    text-align: center;
+    padding-top: 45px;
+}
+.gameButtons{
+    margin-left: 780px;
+}
+.game{
+    background: #05E7B6;
+    color: white;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    border-color: none;
+    border-style: none;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 50px;
+    
+}

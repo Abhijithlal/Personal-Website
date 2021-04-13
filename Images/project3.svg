@@ -1,0 +1,65 @@
+<svg id="Component_9_1" data-name="Component 9 – 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="517" height="455" viewBox="0 0 517 455">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        fill: #0978cd;
+        font-size: 35px;
+        font-family: Montserrat-Regular, Montserrat;
+      }
+
+      .cls-3 {
+        fill: #151d1d;
+      }
+
+      .cls-4 {
+        fill: #15f266;
+      }
+
+      .cls-5 {
+        fill: #fe5959;
+      }
+
+      .cls-6 {
+        stroke: none;
+      }
+
+      .cls-7 {
+        fill: none;
+      }
+
+      .cls-8 {
+        filter: url(#Rectangle_31);
+      }
+    </style>
+    <filter id="Rectangle_31" x="12" y="13" width="490" height="281" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Rectangle_30" data-name="Rectangle 30" class="cls-1">
+    <rect class="cls-6" width="517" height="455" rx="20"/>
+    <rect class="cls-7" x="0.5" y="0.5" width="516" height="454" rx="19.5"/>
+  </g>
+  <text id="Rock_Paper_Scissors_Game" data-name="Rock Paper Scissors
+Game" class="cls-2" transform="translate(275 358)"><tspan x="-174.02" y="0">Rock Paper Scissors</tspan><tspan x="-53.025" y="43">Game</tspan></text>
+  <g class="cls-8" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <rect id="Rectangle_31-2" data-name="Rectangle 31" class="cls-3" width="430" height="221" rx="20" transform="translate(42 40)"/>
+  </g>
+  <rect id="Rectangle_32" data-name="Rectangle 32" class="cls-4" width="103" height="47" rx="10" transform="translate(112 127)"/>
+  <rect id="Rectangle_34" data-name="Rectangle 34" class="cls-4" width="103" height="47" rx="10" transform="translate(309 127)"/>
+  <rect id="Rectangle_36" data-name="Rectangle 36" class="cls-4" width="37" height="12" rx="6" transform="translate(291 211)"/>
+  <rect id="Rectangle_37" data-name="Rectangle 37" class="cls-4" width="37" height="12" rx="6" transform="translate(346 211)"/>
+  <rect id="Rectangle_39" data-name="Rectangle 39" class="cls-4" width="37" height="12" rx="6" transform="translate(203 81)"/>
+  <rect id="Rectangle_40" data-name="Rectangle 40" class="cls-5" width="37" height="12" rx="6" transform="translate(276 81)"/>
+  <rect id="Rectangle_38" data-name="Rectangle 38" class="cls-4" width="37" height="12" rx="6" transform="translate(401 211)"/>
+  <rect id="Rectangle_33" data-name="Rectangle 33" class="cls-4" width="177" height="21" rx="10" transform="translate(169 51)"/>
+  <rect id="Rectangle_35" data-name="Rectangle 35" class="cls-4" width="140" height="8" rx="4" transform="translate(262 93) rotate(90)"/>
+</svg>

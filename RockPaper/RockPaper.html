@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="RockStyle.css">
+</head>
+<body>
+    <div class="main">
+        <div class="heading">
+            <h1>ROCK PAPER SCISSOR</h1>
+        </div>
+        <div class="optionButtons">
+            <button class="restartButton" onclick="restart()">RESTART</button>
+            <button class="exitButton" onclick="closeWin()">EXIT</button>
+        </div>
+        <div class="compScore">
+            <h2>COMPUTER:</h2>
+            <p id="compScore" class="compScoreValue" >0</p>
+        </div>
+        <div class="compResponse">
+            <h1 id="new-text"></h1>
+        </div>
+        <div class="line">
+            <img src="Line 1.svg" alt="image of line">
+        </div>
+        <div class="userScore">
+            <h2>YOU:</h2>
+            <p id="userScore" class="userScoreValue" value=0>0</p>
+        </div>
+        <div>
+            <div>
+                <h1 class="gameValue" id="gameValue"></h1>
+            </div>
+            <div class="gameButtons">
+            <button class="game" onclick="playRock()" id="gameBut1">Rock</button>
+            <button class="game" onclick="playPaper()" id="gameBut2">Paper</button>
+            <button class="game" onclick="playScissor()" id="gameBut3">Scissor</button>
+            </div>
+
+        </div>
+    </div>
+    
+    
+    <script src="RockScript.js"></script>
+    
+</body>
+</html>
