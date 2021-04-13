@@ -370,8 +370,11 @@ nav{
     .technology-section{
         height: 20vh;
     }
+    .tech-use{
+        font-size: 30px;
+    }
     .logo{
-        width: 100px;
+        width: 80px;
         margin-top: 15%;
     }
 }
