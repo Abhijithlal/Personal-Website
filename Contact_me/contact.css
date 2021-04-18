@@ -23,6 +23,11 @@
     align-items: center;  
     
 }
+@media screen and (max-width:768px){
+    .main{
+        min-height: 80vh;
+    }
+}
 .heading{
     color: white;
     font-family: Montserrat, sans-serif;
