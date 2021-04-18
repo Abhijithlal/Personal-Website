@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index_style.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact Me</title>
+</head>
+<body>
+    <section class="top-section">
+        <nav>
+            <div>
+                <a class="name" href="../index.html">ABHIJITH <span class="lal">LAL</span></a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="../Resume/resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </section>
+    <section class="section">
+        <div class="main">
+            <div class="heading">
+                <h1 >Contact Me</h1>
+            </div>
+            <div class="form-section">
+                <form id="form" method="POST" autocomplete="off" name="Website_response" action="">
+                    <label for="name">Name</label> <br>
+                    <input class="text" id="name" type="text" name="name" placeholder="Enter your full name" required> <br>
+                    <label for="phone">Phone</label> <br>
+                    <input type="number" id="phone" name="phone" placeholder="Enter your phone number" required> <br>
+                    <label for="email">Email</label> <br>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required> <br>
+                    <label for="message">Your message</label> <br>
+                    <textarea class="text-area" id="message" name="message" placeholder="Enter your message here..." required></textarea>
+                    <input class="submit" type="submit" value="submit">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="../index.js"></script>
+    <script>
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzufJOWGDfHoloHKyPQRqM7hlvoeeCFXrIw7qj4vJvd-s9hzzVYusIA8tSSpgK9q6_C/exec'
+
+        const form = document.forms['Website_response']
+
+      
+
+        form.addEventListener('submit', e => {
+
+          e.preventDefault()
+
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+
+            .then(response => alert("Thank you for your message!"))
+
+            .catch(error => console.error('Error!', error.message))
+
+        })
+
+      </script>
+
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
