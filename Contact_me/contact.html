@@ -58,15 +58,20 @@
 
         var button = document.querySelector(".submit");
         button.addEventListener('click', function () {
-            var doc = document.getElementById("message").value;
-            var n = doc.length;
-            if (n > 0) {
+            var doc_msg = document.getElementById("message").value;
+            var doc_name = document.getElementById("name").value;
+            var doc_phone = document.getElementById("phone").value;
+            var doc_email = document.getElementById("email").value;
+            var ser = doc_email.search("@");
+            var m = doc_msg.length;
+            var n = doc_name.length;
+            var p = doc_phone.length;
+            var e = doc_email.length;
+            if (n > 0 && m > 0 && p > 0 && e > 0 && ser >= 0) {
                 button.style.background = "coral";
                 button.value = "Submitted";
             }
         })
-
-
     </script>
     <script>
 
