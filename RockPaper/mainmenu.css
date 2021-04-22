@@ -82,7 +82,7 @@ span{
 }
 @media screen and (max-width:900px){
     .head{
-        font-size: 7vh;
+        font-size: 6vh;
     }
     .buttonPlay{
         font-size: 3vh;
