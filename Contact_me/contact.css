@@ -25,6 +25,7 @@
 }
 @media screen and (max-width:768px){
     .main{
+        width: 90%;
         min-height: 80vh;
     }
 }
