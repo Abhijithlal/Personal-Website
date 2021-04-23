@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat,sans-serif:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    
+}
+body{
+    background: rgb(32, 43, 43);
+}
+
+.top-section{
+    width: 100%;
+    height: 8vh;
+    background: rgb(32, 43, 43);
+
+}
+
+/*Code for nav bar*/
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background: rgb(32, 43, 43);
+    opacity: 0.95;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+}
+.name{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 20px;
+    position: absolute;
+    left: 10%;
+    margin-top: -10px;    
+}
+.lal{
+    color: dodgerblue;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 5%;
+    width: 40%;  
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 13px;
+    padding-inline: 15px;
+    padding-block: 8px;
+    border-radius: 30px;  
+}
+.nav-links a:hover{
+    background: dodgerblue;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:1050px) {
+    .nav-links{
+        
+        padding-inline: 10px;
+        padding-block: 8px;
+        width: 58%; 
+    }
+} 
+
+@media screen and (max-width:768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 70vh;
+        width: 60%;
+        top: 8vh;
+        padding-inline: 12px;
+        padding-block: 8px;
+        background: dodgerblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 10;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .burger{
+        display: block;   
+    }   
+}
+.nav-active{
+    transform: translateX(0%);
+}
+
+/* body section*/
+.main{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+.intro{
+    border: solid;
+    border-color: dodgerblue;
+    border-width: 5px;
+    width: 35%;
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2%;
+    margin-left: 6%;
+    border-radius: 20px;
+}
+
+.photo{
+    width: 35vh;
+    border-radius: 150px;
+}
+.me{
+    font-size: 20px;
+    text-align: center;
+    
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+.education{
+    width: 60%;
+    margin-top: 2%;
+}
+.schoolSection{
+    width: 100%;
+    min-height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondarySchool{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 2%;
+}
+.spanSchool{
+    color: rgb(49, 152, 255);
+}
+.schoolName{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    width: 70%;
+    height: 120px;
+    background: rgb(27, 124, 221);
+    padding-top: 3%;
+    border-radius: 20px;
+}
+.collegeSection{
+    width: 100%;
+    min-height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.college{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+.collegeName{
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 20px;
+    width: 70%;
+    height: 130px;
+    background: rgb(27, 124, 221);
+    padding-top: 2.5%;
+    border-radius: 20px;
+}
+.secondMain{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+.aboutGrad{
+    background: rgb(27, 124, 221);
+    width: 35%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2%;
+    margin-left: 3%;
+    border-radius: 20px;
+    text-align: center; 
+}
+.aboutGradHead{
+    color: white;
+    margin-top: 2%;
+}
+.spanGrad{
+    color: rgb(32, 43, 43);
+}
+.gradDetails{
+    color: white;
+}
+.detailsHead{
+    font-size: 18px;
+    font-weight: bold;
+}
+.detail{
+    margin-block: 5%;
+    font-size: 20px;
+    font-weight: 400;
+}
+.skillsSection{
+    width: 50%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border: solid;
+    border-color: dodgerblue;
+    border-width: 5px;
+    border-radius: 20px;
+}
+.logo{
+    width: 13vh;
+    margin-bottom: 3%;
+}
+.programSkills{
+    margin-block: 3%;
+}
+.mySkills{
+    margin-top: 2%;
+    font-size: 30px;
+}
+.othSkills{
+    padding-bottom: 3%;
+    
+}
+.proSkills{
+    padding-bottom: 5%;
+}
+.thirdMain{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.techCircle{
+    width: 50vh;
+    height: 50vh;
+}
+.myInterests{
+    text-align: center;
+    margin-bottom: 10%;
+    font-size: 35px;
+}
+.interests{
+    color: white;
+    text-align: left;
+    border: solid;
+    border-color: dodgerblue;
+    border-width: 5px;
+    border-radius: 20px;
+    width: 30%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.interestList{
+    font-size: 20px;   
+}
+
+/*1080 width section*/
+@media screen and (max-width:1080px){
+    .me{
+        font-size: 15px;
+    }
+    .secondarySchool, .college, .aboutGradHead, .mySkills, .myInterests{
+        font-size: 25px;
+    }
+    .schoolName, .collegeName, .detailsHead, .interestList{
+        font-size: 16px;
+        padding-top: 5%;
+    }
+    .detail{
+        font-size: 18px;
+    }
+}
+
+/*768 width section*/
+@media screen and (max-width:768px) {
+    .main{
+        flex-direction: column;
+    }
+    .intro{
+        width: 85%;
+        min-height: 70vh;
+        margin: auto;
+        
+    }
+    .education{
+        width: 80%;
+        margin-top: 1%;
+    }
+    
+    .collegeHead{
+        margin-top: -15%;
+    }
+    .schoolName, .collegeName{
+        width: 100%;
+        height: 120px;
+        padding-top: 5%;
+    }
+    .secondMain{
+        flex-direction: column;
+    }
+    .aboutGrad{
+        width: 80%;
+        min-height: 50vh;
+        margin-top: 0%;
+        margin-left: 0%;
+    }
+    .aboutGradHead{
+        font-size: 20px;
+    }
+    .detailsHead{
+        font-size: 18px;
+    }
+    .detail{
+        font-size: 15px;
+    }
+    .skillsSection{
+        width: 80%;
+        margin-top: 3%;
+    }
+    .thirdMain{
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+    .techCircle{
+        width: 40vh;
+        height: 40vh;
+    }
+    .myInterests{
+        text-align: center;
+        margin-bottom: 10%;
+        font-size: 25px;
+    }
+    .interests{
+        width: 80%;
+    }
+    .interestList{
+        font-size: 18px;   
+    }
+}
